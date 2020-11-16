@@ -1,174 +1,184 @@
 <!DOCTYPE html>
 <html class="form" lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML Academy: Погнали</title>
-</head>
-<body class="form-body">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body class="form-body">
 
-  <!-- Header -->
+<!-- Header -->
 
-  <header class="form-header header">
-    <div class="form-header__wrapper">
-      <a class="form-header__logo" href="index.html">
-        <img src="http://placehold.it/96x15" width="96" height="15" alt="Сервис «Погнали»">
-      </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-    </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="">О сервисе</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="">Напрвления</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="">Попутчики</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link user-list__link--tel" href="tel:+78005558628">
-              <span class="visually-hidden">Телефон</span>
-              8 800 555-86-28
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link user-list__link--email" href="mailto:mail@htmlacademy.ru">
-              <span class="visually-hidden">Почта</span>
-              mail@htmlacademy.ru
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__login button" href="">Авторизация</a>
-          </li>
-        </ul>
-        <div class="main-nav__social-wrapper">
-          <ul class="header-social__list social-list">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="">
-                <span class="visually-hidden">Мы в Фейсбуке</span>
-              </a>
+    <header class="form-header">
+      <div class="form-header__wrapper">
+        <a class="form-header__logo" href="index.html">
+          <img src="http://placehold.it/96x15" width="96" height="15" alt="Сервис «Погнали»">
+        </a>
+          <button class="form-header__nav-toggle" type="button">
+            <span class="form-header__text visually-hidden">Открыть меню</span>
+          </button>
+      </div>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="">О сервисе</a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="">
-                <span class="visually-hidden">Мы в ВКонтакте</span>
-              </a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Напрвления</a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="">
-                <span class="visually-hidden">Мы в Инстаграм</span>
-              </a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Попутчики</a>
             </li>
           </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--tel" href="tel:+78005558628">
+                <span class="user-list__text visually-hidden">Телефон</span>
+                8 800 555-86-28
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--email" href="mailto:mail@htmlacademy.ru">
+                <span class="user-list__text visually-hidden">Почта</span>
+                mail@htmlacademy.ru
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__login button" href="">Авторизация</a>
+            </li>
+          </ul>
+          <div class="main-nav__social-wrapper">
+            <ul class="main-nav__social-list social-list">
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link--facebook" href="">
+                  <span class="social-list__text visually-hidden">Мы в Фейсбуке</span>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link--vk" href="">
+                  <span class="social-list__text visually-hidden">Мы в ВКонтакте</span>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link--instagram" href="">
+                  <span class="social-list__text visually-hidden">Мы в Инстаграм</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
 <!-- Main -->
 
-  <main class="form-main">
-    <h1 class="form-main__title title form-main__title--current">Направления</h1>
+    <main class="form-main">
+      <h1 class="form-main__title title form-main__title--current">Направления</h1>
 
-  <!-- User profile -->
+<!-- User profile -->
 
-    <section class="user-profile">
-      <h2 class="visually-hidden">Профайл путешественника</h2>
-      <div class="travelers__progressbar progressbar">
-        <span class="progressbar__status-number">80</span>
-        <span class="progressbar__status-level">level</span>
-      </div>
-      <img src="https://via.placeholder.com/100x100" width="100" height="100" alt="Фотография путешественника">
-      <a class="user-profile__button button" href="">Сменить фото</a>
-      <div class="user-profile__hashtags">
-        <p class="hashtags__title">Тэги</p>
-        <p class="hashtags__text">#бургер #бар #футбол #концерт #крафт</p>
-      </div>
-      <div class="user-profile__ways">
-        <p class="ways__title">Транспорт</p>
-        <ul class="ways__list ways">
-          <li class="ways__item ways__item--air ways__item--active">
-            <img src="http://placehold.it/21x21" width="21" height="21" alt="Авиаперелёт">
+      <section class="user-profile">
+        <h2 class="user-profile__title visually-hidden">Профайл путешественника</h2>
+        <div class="travelers__progressbar progressbar">
+          <span class="progressbar__status-number">80</span>
+          <span class="progressbar__status-level">level</span>
+        </div>
+        <img src="https://via.placeholder.com/100x100" width="100" height="100" alt="Фотография путешественника">
+        <a class="user-profile__button button" href="">Сменить фото</a>
+        <div class="user-profile__hashtags">
+          <p class="hashtags__title">Тэги</p>
+          <p class="hashtags__text">#бургер #бар #футбол #концерт #крафт</p>
+        </div>
+        <div class="user-profile__ways">
+          <p class="ways__title">Транспорт</p>
+          <ul class="ways__list ways">
+            <li class="ways__item ways__item--air ways__item--active">
+              <img src="http://placehold.it/21x21" width="21" height="21" alt="Авиаперелёт">
+            </li>
+            <li class="ways__item ways__item--vehicles ways__item--active">
+              <img src="http://placehold.it/17x19" width="17" height="19" alt="Автотранспорт">
+            </li>
+            <li class="ways__item ways__item--bycicle">
+              <img src="http://placehold.it/24x24" width="24" height="24" alt="Велотранспорт">
+            </li>
+            <li class="ways__item ways__item--foot ways__item--active">
+              <img src="http://placehold.it/21x23" width="21" height="23" alt="Пешком">
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    <!-- Plans -->
+
+    <section class="plans">
+      <h2 class="plans__title title">Мои планы:</h2>
+      <ol class="plans__list">
+        <li class="plans__item">
+          Франция, Италия
+          <p class="plans__companions-quantity">3 попутчика</p>
+          <p class="plans__period">26 мар — 29 мар</p>
+          <button class="plans__button button">Изменить</button>
+        </li>
+        <li class="plans__item">
+          Таиланд, Индонезия
+          <p class="plans__companions-quantity">1 попутчик</p>
+          <p class="plans__period">1 июл — 15 июл</p>
+          <button class="plans__button button">Изменить</button>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Plan add -->
+
+    <section class="plan-add">
+      <h2 class="plan-add__title title">Добавить план:</h2>
+      <form class="plan-add__filter filter" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter__date filter-date">
+          <legend class="filter-date__title">Шаг 1. Даты пребывания</legend>
+          <p class="filter-date__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+          <label class="filter-date__companions-quantity">
+            <span class="filter-date__name-input">Ищу попутчиков:</span>
+            <span class="filter-date__interpretation-input">Чел.</span> <br>
+            <input type="text" name="companions-quantity" value="2">
+          </label>
+        </fieldset>
+      </form>
+    </section>
+
+    </main>
+
+<!  -- Footer -->
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img src="http://placehold.it/96x15" width="96" height="15" alt="Сервис «Погнали»">
+        </a>
+        <ul class="page-footer__social social-list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
           </li>
-          <li class="ways__item ways__item--vehicles ways__item--active">
-            <img src="http://placehold.it/17x19" width="17" height="19" alt="Автотранспорт">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="">
+              <span class="visually-hidden">Мы в ВКонтакте</span>
+            </a>
           </li>
-          <li class="ways__item ways__item--bycicle">
-            <img src="http://placehold.it/24x24" width="24" height="24" alt="Велотранспорт">
-          </li>
-          <li class="ways__item ways__item--foot ways__item--active">
-            <img src="http://placehold.it/21x23" width="21" height="23" alt="Пешком">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="">
+              <span class="visually-hidden">Мы в Инстаграм</span>
+            </a>
           </li>
         </ul>
       </div>
-    </section>
+      <div class="copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="">
+          <img src="http://placehold.it/27x33" width="27" height="33" alt="Логотип «HTML Academy»">
+        </a>
+      </div>
+    </footer>
 
-  <!-- Plans -->
-
-  <section class="plans">
-    <h2 class="plans__title title">Мои планы:</h2>
-    <ol class="plans__list">
-      <li class="plans__item">
-        Франция, Италия
-        <p class="plans__companion-quantity">3 попутчика</p>
-        <p class="plans__period">26 мар — 29 мар</p>
-        <button class="plans__button button">Изменить</button>
-      </li>
-      <li class="plans__item">
-        Таиланд, Индонезия
-        <p class="plans__companion-quantity">1 попутчик</p>
-        <p class="plans__period">1 июл — 15 июл</p>
-        <button class="plans__button button">Изменить</button>
-      </li>
-    </ol>
-  </section>
-
-  <!-- Plan add -->
-
-  <section class="plan-add">
-    <h2 class="plan-add__title">Добавить план:</h2>
-    <form  action="https://echo.htmlacademy.ru"></form>
-  </section>
-
-  </main>
-
-<!-- Footer -->
-
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
-        <img src="http://placehold.it/96x15" width="96" height="15" alt="Сервис «Погнали»">
-      </a>
-      <ul class="page-footer__social social-list">
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="">
-            <span class="visually-hidden">Мы в Фейсбуке</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="">
-            <span class="visually-hidden">Мы в ВКонтакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="">
-            <span class="visually-hidden">Мы в Инстаграм</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="">
-        <img src="http://placehold.it/27x33" width="27" height="33" alt="Логотип «HTML Academy»">
-      </a>
-    </div>
-  </footer>
-
-</body>
+  </body>
 </html>
