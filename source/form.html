@@ -24,10 +24,10 @@
               <a class="site-list__link" href="">О сервисе</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">Напрвления</a>
+              <a class="site-list__link site-list__link--current" href="">Напрвления</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">Попутчики</a>
+              <a class="site-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
@@ -108,73 +108,252 @@
         </div>
       </section>
 
-    <!-- Plans -->
+<!-- Plans -->
 
-    <section class="plans">
-      <h2 class="plans__title title">Мои планы:</h2>
-      <ol class="plans__list">
-        <li class="plans__item">
-          Франция, Италия
-          <p class="plans__companions-quantity">3 попутчика</p>
-          <p class="plans__period">26 мар — 29 мар</p>
-          <button class="plans__button button">Изменить</button>
-        </li>
-        <li class="plans__item">
-          Таиланд, Индонезия
-          <p class="plans__companions-quantity">1 попутчик</p>
-          <p class="plans__period">1 июл — 15 июл</p>
-          <button class="plans__button button">Изменить</button>
-        </li>
-      </ol>
-    </section>
+      <section class="plans">
+        <h2 class="plans__title title">Мои планы:</h2>
+        <ol class="plans__list">
+          <li class="plans__item">
+            Франция, Италия
+            <p class="plans__companions-quantity">3 попутчика</p>
+            <p class="plans__period">26 мар — 29 мар</p>
+            <button class="plans__button button">Изменить</button>
+          </li>
+          <li class="plans__item">
+            Таиланд, Индонезия
+            <p class="plans__companions-quantity">1 попутчик</p>
+            <p class="plans__period">1 июл — 15 июл</p>
+            <button class="plans__button button">Изменить</button>
+          </li>
+        </ol>
+      </section>
 
-    <!-- Plan add -->
+<!-- Plan add -->
 
-    <section class="plan-add">
-      <h2 class="plan-add__title title">Добавить план:</h2>
-      <form class="plan-add__filter filter" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter__date filter-date">
-          <legend class="filter-date__title">Шаг 1. Даты пребывания</legend>
-          <p class="filter-date__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-          <label class="filter-date__companions-quantity">
-            <span class="filter-date__name-input">Ищу попутчиков:</span>
-            <span class="filter-date__interpretation-input">Чел.</span> <br>
-            <input type="text" name="companions-quantity" value="2">
-          </label>
-        </fieldset>
-      </form>
-    </section>
+      <section class="plan-add">
+        <h2 class="plan-add__title title">Добавить план:</h2>
+        <form class="plan-add__filter filter" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter__date filter-date">
+            <legend class="filter-date__title">Шаг 1. Даты пребывания</legend>
+            <p class="filter-date__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <label class="filter-date__companions-quantity">
+              <span class="filter-date__name-input">Ищу попутчиков:</span>
+              <span class="filter-date__interpretation-input">Чел.</span> <br>
+              <button class="filter-date__button filter-date__button--minus">-</button>
+              <input class="filter-date__input" type="text" name="companions-quantity" value="2">
+              <button class="filter-date__button filter-date__button--plus">+</button>
+            </label> <br>
+            <label class="filter-date__days-quantity">
+              <span class="filter-date__name-input">Длительность:</span>
+              <span class="filter-date__interpretation-input">Дн.</span> <br>
+              <button class="filter-date__button filter-date__button--minus">-</button>
+              <input class="filter-date__input" type="text" name="days-quantity" value="3">
+              <button class="filter-date__button filter-date__button--plus">+</button>
+            </label> <br>
+            <label class="filter-date__checkbox">
+              <input class="filter-date__input-checkbox" type="checkbox" name="checkbox" checked>
+              Можно с детьми
+            </label>
+            <ul class="filter-date__month month-list">
+              <li class="month-list__item">
+                <span class="month-list__button-prev visually-hidden">Назад</span>
+              </li>
+              <li class="month-list__item">
+                <span class="month-list__text-month">Март</span>
+                <span class="month-list__text-year">2019</span>
+              </li>
+              <li class="month-list__item">
+                <span class="month-list__button-next visually-hidden">Вперёд</span>
+              </li>
+            </ul>
+            <table class="filter-date__calendar calendar">
+              <tr class="calendar__days-row days-row">
+                <th class="days-row__item">П</th>
+                <th class="days-row__item">В</th>
+                <th class="days-row__item">С</th>
+                <th class="days-row__item">Ч</th>
+                <th class="days-row__item">П</th>
+                <th class="days-row__item">С</th>
+                <th class="days-row__item">В</th>
+              </tr>
+              <tr class="calendar__number-row number-row">
+                <td class="number-row__item">23</td>
+                <td class="number-row__item">24</td>
+                <td class="number-row__item">25</td>
+                <td class="number-row__item">26</td>
+                <td class="number-row__item">27</td>
+                <td class="number-row__item">28</td>
+                <td class="number-row__item">1</td>
+              </tr>
+              <tr class="calendar__number-row number-row">
+                <td class="number-row__item">2</td>
+                <td class="number-row__item">3</td>
+                <td class="number-row__item">4</td>
+                <td class="number-row__item">5</td>
+                <td class="number-row__item">6</td>
+                <td class="number-row__item">7</td>
+                <td class="number-row__item">8</td>
+              </tr>
+              <tr class="calendar__number-row number-row">
+                <td class="number-row__item">9</td>
+                <td class="number-row__item">10</td>
+                <td class="number-row__item">11</td>
+                <td class="number-row__item">12</td>
+                <td class="number-row__item">13</td>
+                <td class="number-row__item">14</td>
+                <td class="number-row__item">15</td>
+              </tr>
+              <tr class="calendar__number-row number-row">
+                <td class="number-row__item">16</td>
+                <td class="number-row__item">17</td>
+                <td class="number-row__item">18</td>
+                <td class="number-row__item">19</td>
+                <td class="number-row__item">20</td>
+                <td class="number-row__item">21</td>
+                <td class="number-row__item">22</td>
+              </tr>
+              <tr class="calendar__number-row number-row">
+                <td class="number-row__item">23</td>
+                <td class="number-row__item">24</td>
+                <td class="number-row__item">25</td>
+                <td class="number-row__item number-row__item--current number-row__item--active">26</td>
+                <td class="number-row__item number-row__item--current">27</td>
+                <td class="number-row__item number-row__item--current">28</td>
+                <td class="number-row__item number-row__item--loose">29</td>
+              </tr>
+              <tr class="calendar__number-row number-row">
+                <td class="number-row__item number-row__item--loose">30</td>
+                <td class="number-row__item number-row__item--loose">31</td>
+                <td class="number-row__item number-row__item--loose">1</td>
+                <td class="number-row__item number-row__item--loose">2</td>
+                <td class="number-row__item number-row__item--loose">3</td>
+                <td class="number-row__item number-row__item--loose">4</td>
+                <td class="number-row__item number-row__item--loose">5</td>
+              </tr>
+            </table>
+            <button class="filter__button button button__next-step" type="button">Следующий шаг</button>
+          </fieldset>
 
+          <!-- Здесь будет выпадающий список -->
+
+          <fieldset class="filter__country filter-country">
+            <legend class="filter-country__title">Шаг 2. Маршрут</legend>
+            <p class="filter-country">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+
+            <label class="filter-country__country-choice">
+              <input class="filter-country__input" type="text" value="Босния и Герцеговина">
+              <button class="filter-country__button-open button-open">
+                <span class="button-open__text visually-hidden">Выбрерите страну</span>
+              </button>
+              <span class="filter-country__flag">
+                <img src="http://placehold.it/35x24" width="35" height="24" alt="Флаг">
+              </span>
+              <button class="filter-country__button-delete button-delete">
+                <span class="button-delete__text visually-hidden">Удалить</span>
+              </button>
+            </label> <br>
+
+            <label class="filter-country__country-choice">
+              <input class="filter-country__input" type="text" value="Чехия">
+              <button class="filter-country__button-open button-open">
+                <span class="button-open__text visually-hidden">Выбрерите страну</span>
+              </button>
+              <span  class="filter-country__flag">
+                <img src="http://placehold.it/35x24" width="35" height="24" alt="Флаг">
+              </span>
+              <button class="filter-country__button-delete button-delete">
+                <span class="button-delete__text visually-hidden">Удалить</span>
+              </button>
+            </label> <br>
+
+            <label class="filter-country__country-choice country-choice">
+              <input class="filter-country__input" type="text" value="Выберите страну">
+              <button class="filter-country__button-open button-open">
+                <span class="button-open__text visually-hidden">Выбрерите страну</span>
+              </button>
+              <button class="filter-country__button-delete button-delete">
+                <span class="button-delete__text visually-hidden">Удалить</span>
+              </button>
+            </label> <br>
+
+            <label class="filter-country__country-choice">
+              <input class="filter-country__input" type="text" value="Добавить страну">
+              <button class="filter-country__button-add button-add">
+                <span class="button-add__text visually-hidden">Добавить страну</span>
+              </button>
+            </label> <br>
+
+            <!-- <select size="1" name="filter-country">
+              <option value="Австралия">Австралия</option>
+              <option value="Австрия">Австрия</option>
+              <option value="Азербайджан">Азербайджан</option>
+              <option value="Албания">Албания</option>
+              <option value="Алжир">Алжир</option>
+              <option value="Ангола">Ангола</option>
+              <option value="Андорра">Андорра</option>
+              <option value="Антигуа и Барбуда">Антигуа и Барбуда</option>
+              <option value="Аргентина">Аргентина</option>
+              <option value="Армения">Армения</option>
+              <option value="Афганистан">Афганистан</option>
+            </select> -->
+
+            <button class="filter-country__button button button__next-step" type="button">Следующий шаг</button> <br>
+            <button class="filter-country__button button button__prev-step" type="button">На шаг назад</button>
+          </fieldset>
+
+          <fieldset class="filter__entertainment filter-entertainment">
+            <legend class="filter-entertainment__title">Шаг 3. Развлечения</legend>
+            <p class="filter-entertainment__text">Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <label>
+              <span class="filter-entertainment__country-selected">Босния и Герцеговина</span>
+              <span class="filter-country__flag">
+                <img src="http://placehold.it/35x24" width="35" height="24" alt="Флаг">
+              </span> <br>
+              <textarea name="filter" cols="24" rows="10" placeholder="План действий"></textarea>
+            </label> <br>
+
+            <label>
+              <span class="filter-entertainment__country-selected">Чехия</span>
+              <span class="filter-country__flag">
+                <img src="http://placehold.it/35x24" width="35" height="24" alt="Флаг">
+              </span> <br>
+              <textarea name="filter" cols="24" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+            </label> <br>
+            <button class="filter__button button" type="submit">Отправить</button>
+            <button class="filter-country__button button button__prev-step" type="button">На шаг назад</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
 <!-- Footer -->
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
+    <footer class="form-footer">
+      <div class="form-footer__wrapper">
+        <a class="form-footer__logo" href="index.html">
           <img src="http://placehold.it/96x15" width="96" height="15" alt="Сервис «Погнали»">
         </a>
-        <ul class="page-footer__social social-list">
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="">
-              <span class="visually-hidden">Мы в Фейсбуке</span>
+        <ul class="form-footer__social social-list">
+          <li class="social-list__item--facebook">
+            <a class="social-list__link" href="">
+              <span class="social-list__text visually-hidden">Мы в Фейсбуке</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="">
-              <span class="visually-hidden">Мы в ВКонтакте</span>
+          <li class="social-list__item--vk">
+            <a class="social-list__link" href="">
+              <span class="social-list__text visually-hidden">Мы в ВКонтакте</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="">
-              <span class="visually-hidden">Мы в Инстаграм</span>
+          <li class="social-list__item--instagram">
+            <a class="social-list__link" href="">
+              <span class="social-list__text visually-hidden">Мы в Инстаграм</span>
             </a>
           </li>
         </ul>
       </div>
       <div class="copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="http://placehold.it/27x33" width="27" height="33" alt="Логотип «HTML Academy»">
         </a>
       </div>
