@@ -73,7 +73,7 @@
 <!-- Main -->
 
     <main class="form-main">
-      <h1 class="form-main__title title title__first">Направления</h1>
+      <h1 class="form-main__title title title--first">Направления</h1>
 
 <!-- User profile -->
 
@@ -133,28 +133,28 @@
       <section class="plan-add">
         <h3 class="plan-add__title title">Добавить план:</h3>
         <form class="plan-add__filter filter" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="filter__date filter-date">
-            <legend class="filter-date__title">Шаг 1. Даты пребывания</legend>
-            <p class="filter-date__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-            <label class="filter-date__companions-quantity">
-              <span class="filter-date__name-input">Ищу попутчиков:</span>
-              <span class="filter-date__interpretation-input">Чел.</span> <br>
-              <button class="filter-date__button filter-date__button--minus">-</button>
-              <input class="filter-date__input" type="text" name="companions-quantity" value="2">
-              <button class="filter-date__button filter-date__button--plus">+</button>
+          <fieldset class="filter__period filter-period">
+            <legend class="filter-period__title">Шаг 1. Даты пребывания</legend>
+            <p class="filter-period__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <label class="filter-period__companions-quantity">
+              <span class="filter-period__name-input">Ищу попутчиков:</span>
+              <span class="filter-period__interpretation-input">Чел.</span> <br>
+              <button class="filter-period__button filter-period__button--minus">-</button>
+              <input class="filter-period__input" type="text" name="companions-quantity" value="2">
+              <button class="filter-period__button filter-period__button--plus">+</button>
             </label> <br>
-            <label class="filter-date__days-quantity">
-              <span class="filter-date__name-input">Длительность:</span>
-              <span class="filter-date__interpretation-input">Дн.</span> <br>
-              <button class="filter-date__button filter-date__button--minus">-</button>
-              <input class="filter-date__input" type="text" name="days-quantity" value="3">
-              <button class="filter-date__button filter-date__button--plus">+</button>
+            <label class="filter-period__days-quantity">
+              <span class="filter-period__name-input">Длительность:</span>
+              <span class="filter-period__interpretation-input">Дн.</span> <br>
+              <button class="filter-period__button filter-period__button--minus">-</button>
+              <input class="filter-period__input" type="text" name="days-quantity" value="3">
+              <button class="filter-period__button filter-period__button--plus">+</button>
             </label> <br>
-            <label class="filter-date__checkbox">
-              <input class="filter-date__input-checkbox" type="checkbox" name="checkbox" checked>
+            <label class="filter-period__checkbox">
+              <input class="filter-period__input-checkbox" type="checkbox" name="checkbox" checked>
               Можно с детьми
             </label>
-            <ul class="filter-date__month month-list">
+            <ul class="filter-period__month month-list">
               <li class="month-list__item">
                 <span class="month-list__button-prev visually-hidden">Назад</span>
               </li>
@@ -166,7 +166,10 @@
                 <span class="month-list__button-next visually-hidden">Вперёд</span>
               </li>
             </ul>
-            <table class="filter-date__calendar calendar">
+
+            <!-- Тут, наверное, лучше дивами сделать. Потом гридами или флексами разложить?  -->
+
+            <table class="filter-period__calendar calendar">
               <tr class="calendar__days-row days-row">
                 <th class="days-row__item">П</th>
                 <th class="days-row__item">В</th>
@@ -234,13 +237,13 @@
             <button class="filter__button button button__next-step" type="button">Следующий шаг</button>
           </fieldset>
 
-          <!-- Здесь будет выпадающий список -->
+<!-- Filter country -->
 
           <fieldset class="filter__country filter-country">
             <legend class="filter-country__title">Шаг 2. Маршрут</legend>
             <p class="filter-country">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
 
-            <label class="filter-country__country-choice">
+            <label class="filter-country__route">
               <input class="filter-country__input" type="text" value="Босния и Герцеговина">
               <button class="filter-country__button-open button-open">
                 <span class="button-open__text visually-hidden">Выбрерите страну</span>
@@ -253,7 +256,7 @@
               </button>
             </label> <br>
 
-            <label class="filter-country__country-choice">
+            <label class="filter-country__route">
               <input class="filter-country__input" type="text" value="Чехия">
               <button class="filter-country__button-open button-open">
                 <span class="button-open__text visually-hidden">Выбрерите страну</span>
@@ -266,7 +269,7 @@
               </button>
             </label> <br>
 
-            <label class="filter-country__country-choice country-choice">
+            <label class="filter-country__route route">
               <input class="filter-country__input" type="text" value="Выберите страну">
               <button class="filter-country__button-open button-open">
                 <span class="button-open__text visually-hidden">Выбрерите страну</span>
@@ -276,7 +279,7 @@
               </button>
             </label> <br>
 
-            <label class="filter-country__country-choice">
+            <label class="filter-country__route">
               <input class="filter-country__input" type="text" value="Добавить страну">
               <button class="filter-country__button-add button-add">
                 <span class="button-add__text visually-hidden">Добавить страну</span>
@@ -300,13 +303,16 @@
             <button class="filter-country__button button button__next-step" type="button">Следующий шаг</button> <br>
             <button class="filter-country__button button button__prev-step" type="button">На шаг назад</button>
 
-<!-- Popup -->
+<!-- Filter country popup -->
 
             <div class="filter-country__popup">
               <span class="popup__title">Выберите страну</span>
               <button class="popup__button-close button-close">
                 <span class="button-close__text visually-hidden">Закрыть</span>
               </button>
+
+              <!-- Тут вместо таблицы лучше сделать дивами и сылками? -->
+
               <table class="popup__alphabet-table alphabet-table">
                 <tr class="alphabet-table__letter-row letter-row">
                   <td class="letter-row__item letter-row__item--current">А</td>
@@ -364,7 +370,7 @@
 
           <fieldset class="filter__entertainment filter-entertainment">
             <legend class="filter-entertainment__title">Шаг 3. Развлечения</legend>
-            <p class="filter-entertainment__text">Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <p class="filter-entertainment__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
             <label>
               <span class="filter-entertainment__country-selected">Босния и Герцеговина</span>
               <span class="filter-country__flag">
