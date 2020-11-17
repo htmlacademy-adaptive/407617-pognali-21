@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Погнали</title>
   </head>
-  <body class="form-body">
+  <body class="form__body">
 
 <!-- Header -->
 
@@ -13,9 +13,9 @@
         <a class="form-header__logo" href="index.html">
           <img src="http://placehold.it/96x15" width="96" height="15" alt="Сервис «Погнали»">
         </a>
-          <button class="form-header__nav-toggle" type="button">
-            <span class="form-header__text visually-hidden">Открыть меню</span>
-          </button>
+        <button class="form-header__nav-toggle" type="button">
+          <span class="form-header__text visually-hidden">Открыть меню</span>
+        </button>
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -73,12 +73,12 @@
 <!-- Main -->
 
     <main class="form-main">
-      <h1 class="form-main__title title form-main__title--current">Направления</h1>
+      <h1 class="form-main__title title title__first">Направления</h1>
 
 <!-- User profile -->
 
       <section class="user-profile">
-        <h2 class="user-profile__title visually-hidden">Профайл путешественника</h2>
+        <h2 class="user-profile__title visually-hidden">Профайл попутчика</h2>
         <div class="travelers__progressbar progressbar">
           <span class="progressbar__status-number">80</span>
           <span class="progressbar__status-level">level</span>
@@ -111,7 +111,7 @@
 <!-- Plans -->
 
       <section class="plans">
-        <h2 class="plans__title title">Мои планы:</h2>
+        <h3 class="plans__title title">Мои планы:</h3>
         <ol class="plans__list">
           <li class="plans__item">
             Франция, Италия
@@ -131,7 +131,7 @@
 <!-- Plan add -->
 
       <section class="plan-add">
-        <h2 class="plan-add__title title">Добавить план:</h2>
+        <h3 class="plan-add__title title">Добавить план:</h3>
         <form class="plan-add__filter filter" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="filter__date filter-date">
             <legend class="filter-date__title">Шаг 1. Даты пребывания</legend>
@@ -248,8 +248,8 @@
               <span class="filter-country__flag">
                 <img src="http://placehold.it/35x24" width="35" height="24" alt="Флаг">
               </span>
-              <button class="filter-country__button-delete button-delete">
-                <span class="button-delete__text visually-hidden">Удалить</span>
+              <button class="filter-country__button-close button-close">
+                <span class="button-close__text visually-hidden">Закрыть</span>
               </button>
             </label> <br>
 
@@ -261,8 +261,8 @@
               <span  class="filter-country__flag">
                 <img src="http://placehold.it/35x24" width="35" height="24" alt="Флаг">
               </span>
-              <button class="filter-country__button-delete button-delete">
-                <span class="button-delete__text visually-hidden">Удалить</span>
+              <button class="filter-country__button-close button-close">
+                <span class="button-close__text visually-hidden">Закрыть</span>
               </button>
             </label> <br>
 
@@ -271,8 +271,8 @@
               <button class="filter-country__button-open button-open">
                 <span class="button-open__text visually-hidden">Выбрерите страну</span>
               </button>
-              <button class="filter-country__button-delete button-delete">
-                <span class="button-delete__text visually-hidden">Удалить</span>
+              <button class="filter-country__button-close button-close">
+                <span class="button-close__text visually-hidden">Закрыть</span>
               </button>
             </label> <br>
 
@@ -299,6 +299,67 @@
 
             <button class="filter-country__button button button__next-step" type="button">Следующий шаг</button> <br>
             <button class="filter-country__button button button__prev-step" type="button">На шаг назад</button>
+
+<!-- Popup -->
+
+            <div class="filter-country__popup">
+              <span class="popup__title">Выберите страну</span>
+              <button class="popup__button-close button-close">
+                <span class="button-close__text visually-hidden">Закрыть</span>
+              </button>
+              <table class="popup__alphabet-table alphabet-table">
+                <tr class="alphabet-table__letter-row letter-row">
+                  <td class="letter-row__item letter-row__item--current">А</td>
+                  <td class="letter-row__item">Б</td>
+                  <td class="letter-row__item">В</td>
+                  <td class="letter-row__item">Г</td>
+                  <td class="letter-row__item">Д</td>
+                </tr>
+                <tr class="alphabet-table__letter-row letter-row">
+                  <td class="letter-row__item">Е</td>
+                  <td class="letter-row__item">З</td>
+                  <td class="letter-row__item">И</td>
+                  <td class="letter-row__item">К</td>
+                  <td class="letter-row__item">Л</td>
+                </tr>
+                <tr class="alphabet-table__letter-row letter-row">
+                  <td class="letter-row__item">М</td>
+                  <td class="letter-row__item">Н</td>
+                  <td class="letter-row__item">О</td>
+                  <td class="letter-row__item">П</td>
+                  <td class="letter-row__item">Р</td>
+                </tr>
+                <tr class="alphabet-table__letter-row letter-row">
+                  <td class="letter-row__item">С</td>
+                  <td class="letter-row__item">Т</td>
+                  <td class="letter-row__item">У</td>
+                  <td class="letter-row__item">Ф</td>
+                  <td class="letter-row__item">Х</td>
+                </tr>
+                <tr class="alphabet-table__letter-row letter-row">
+                  <td class="letter-row__item">Ч</td>
+                  <td class="letter-row__item">Ш</td>
+                  <td class="letter-row__item">Э</td>
+                  <td class="letter-row__item">Ю</td>
+                  <td class="letter-row__item">Я</td>
+                </tr>
+              </table>
+              <div class="alphabet-table__letter-select letter-select">
+                <ul class="letter-select__list">
+                  <li class="letter-select__item letter-select__item--australia">Австралия</li>
+                  <li class="letter-select__item letter-select__item--austria">Австрия</li>
+                  <li class="letter-select__item letter-select__item--azerbaijan">Азербайджан</li>
+                  <li class="letter-select__item letter-select__item--albania">Албания</li>
+                  <li class="letter-select__item letter-select__item--algeria">Алжир</li>
+                  <li class="letter-select__item letter-select__item--angola">Ангола</li>
+                  <li class="letter-select__item letter-select__item--andorra">Андорра</li>
+                  <li class="letter-select__item letter-select__item--antiguabarbuda">Антигуа и Барбуда</li>
+                  <li class="letter-select__item letter-select__item--argentina">Аргентина</li>
+                  <li class="letter-select__item letter-select__item--armenia">Армения</li>
+                  <li class="letter-select__item letter-select__item--afghanistan">Афганистан</li>
+                </ul>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="filter__entertainment filter-entertainment">
