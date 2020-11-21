@@ -312,7 +312,7 @@
               </div>
             </div>
           </fieldset>
-          <button class="companion-change__button button" type="submit">Показать</button>
+          <button class="companion-change__button button" type="button">Показать</button>
         </form>
       </section>
 
@@ -322,13 +322,213 @@
         <ul class="profiles__list profiles-list">
           <li class="profiles-list__item">
             <article class="profiles-list__box user-card">
-              <h3 class="user-card__title">Таня Фирсова</h3>
+              <a class="user-card__link" href="profile-firsova.html">
+                <h3 class="user-card__title">Таня Фирсова</h3>
+              </a>
+              <a class="user-card__link" href="profile-firsova.html">
+                <img src="http://placehold.it/70x70" width="70" height="70" alt="Девушка в купальнике лежит на воде">
+              </a>
               <span class="user-card__likes">1,5 M</span>
               <p class="user-card__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-              <p class="user-card__wants">хочет посетить:</p>
+              <p class="user-card__wants-subtitle user-card-subtitle">хочет посетить:</p>
+              <ul class="user-card__wants-list wants-list">
+                <li class="wants-list__item wants-list__item--sri-lanka">Шри-Ланка</li>
+                <li class="wants-list__item wants-list__item--thailand">Тайланд</li>
+                <li class="wants-list__item wants-list__item--seychelles">Сейшелы</li>
+              </ul>
+              <div class="user-card__ways ways-wrapper">
+                <p class="user-card__ways-subtitle user-card-subtitle">транспорт:</p>
+                <ul class="user-card__list ways-list">
+                  <li class="ways-list__item ways-list__item--air">
+                    <button class="ways-list__button ways-button ways-button--active" type="button">
+                      <span class="ways-button__text visually-hidden">Авиаперелёт</span>
+                    </button>
+                  </li>
+                  <li class="ways-list__item ways-list__item--vehicles">
+                    <button class="ways-list__button ways-button" type="button">
+                      <span class="ways-button__text visually-hidden">Автотранспорт</span>
+                    </button>
+                  </li>
+                  <li class="ways-list__item ways-list__item--bycicle">
+                    <button class="ways-list__button ways-button" type="button">
+                      <span class="ways-button__text visually-hidden">Велотранспорт</span>
+                    </button>
+                  </li>
+                  <li class="ways-list__item ways-list__item--foot">
+                    <button class="ways-list__button ways-button" type="button">
+                      <span class="ways-button__text visually-hidden">Пешком</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-card__level level-wrapper">
+                <p class="user-card__level-subtitle user-card-subtitle">левел:</p>
+                <div class="user-card__progressbar progressbar">
+                  <span class="progressbar__status-number">99</span>
+                  <span class="progressbar__status-level">level</span>
+                </div>
+              </div>
+              <button class="user-card__button button" type="button">Позвать</button>
+            </article>
+          </li>
+
+          <li class="profiles-list__item">
+            <article class="profiles-list__box user-card">
+              <a class="user-card__link" href="profile-demin.html">
+                <h3 class="user-card__title">Петя Демин</h3>
+              </a>
+              <a class="user-card__link" href="profile-demin.html">
+                <img src="http://placehold.it/70x70" width="70" height="70" alt="Молодой человек в тёмных очках">
+              </a>
+              <span class="user-card__likes">1500</span>
+              <p class="user-card__hashtags">#бургер #бар #футбол #концерт #крафт</p>
+              <p class="user-card__wants-subtitle user-card-subtitle">хочет посетить:</p>
+              <ul class="user-card__wants-list wants-list">
+                <li class="wants-list__item wants-list__item--belgium">Бельгия</li>
+                <li class="wants-list__item wants-list__item--czech">Чехия</li>
+              </ul>
+              <div class="user-card__ways ways-wrapper">
+                <p class="user-card__ways-subtitle user-card-subtitle">транспорт:</p>
+                <ul class="user-card__list ways-list">
+                  <li class="ways-list__item ways-list__item--air">
+                    <button class="ways-list__button ways-button ways-button--active" type="button">
+                      <span class="ways-button__text visually-hidden">Авиаперелёт</span>
+                    </button>
+                  </li>
+                  <li class="ways-list__item ways-list__item--vehicles">
+                    <button class="ways-list__button ways-button ways-button--active" type="button">
+                      <span class="ways-button__text visually-hidden">Автотранспорт</span>
+                    </button>
+                  </li>
+                  <li class="ways-list__item ways-list__item--bycicle">
+                    <button class="ways-list__button ways-button" type="button">
+                      <span class="ways-button__text visually-hidden">Велотранспорт</span>
+                    </button>
+                  </li>
+                  <li class="ways-list__item ways-list__item--foot">
+                    <button class="ways-list__button ways-button ways-button--active" type="button">
+                      <span class="ways-button__text visually-hidden">Пешком</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-card__level level-wrapper">
+                <p class="user-card__level-subtitle user-card-subtitle">левел:</p>
+                <div class="user-card__progressbar progressbar">
+                  <span class="progressbar__status-number">80</span>
+                  <span class="progressbar__status-level">level</span>
+                </div>
+              </div>
+              <button class="user-card__button button" type="button">Позвать</button>
+            </article>
+          </li>
+
+          <li class="profiles-list__item">
+            <article class="profiles-list__box user-card">
+              <a class="user-card__link" href="profile-smolov.html">
+                <h3 class="user-card__title">Марк Смолов</h3>
+              </a>
+              <a class="user-card__link" href="profile-smolov.html">
+                <img src="http://placehold.it/70x70" width="70" height="70" alt="Молодой человек в шортах">
+              </a>
+              <span class="user-card__likes">170</span>
+              <p class="user-card__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+              <p class="user-card__wants-subtitle user-card-subtitle">хочет посетить:</p>
+              <ul class="user-card__wants-list wants-list">
+                <li class="wants-list__item wants-list__item--belgium">США</li>
+                <li class="wants-list__item wants-list__item--australia">Австралия</li>
+                <li class="wants-list__item wants-list__item--dominican-republic">Доминикана</li>
+              </ul>
+              <div class="user-card__ways ways-wrapper">
+                <p class="user-card__ways-subtitle user-card-subtitle">транспорт:</p>
+                <ul class="user-card__list ways-list">
+                  <li class="ways-list__item ways-list__item--air">
+                    <button class="ways-list__button ways-button ways-button--active" type="button">
+                      <span class="ways-button__text visually-hidden">Авиаперелёт</span>
+                    </button>
+                  </li>
+                  <li class="ways-list__item ways-list__item--vehicles">
+                    <button class="ways-list__button ways-button" type="button">
+                      <span class="ways-button__text visually-hidden">Автотранспорт</span>
+                    </button>
+                  </li>
+                  <li class="ways-list__item ways-list__item--bycicle">
+                    <button class="ways-list__button ways-button ways-button--active" type="button">
+                      <span class="ways-button__text visually-hidden">Велотранспорт</span>
+                    </button>
+                  </li>
+                  <li class="ways-list__item ways-list__item--foot">
+                    <button class="ways-list__button ways-button" type="button">
+                      <span class="ways-button__text visually-hidden">Пешком</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-card__level level-wrapper">
+                <p class="user-card__level-subtitle user-card-subtitle">левел:</p>
+                <div class="user-card__progressbar progressbar">
+                  <span class="progressbar__status-number">25</span>
+                  <span class="progressbar__status-level">level</span>
+                </div>
+              </div>
+              <button class="user-card__button button" type="button">Позвать</button>
+            </article>
+          </li>
+
+          <li class="profiles-list__item">
+            <article class="profiles-list__box user-card">
+              <a class="user-card__link" href="profile-rogovaya.html">
+                <h3 class="user-card__title">Лариса Роговая</h3>
+              </a>
+              <a class="user-card__link" href="profile-rogovaya.html">
+                <img src="http://placehold.it/70x70" width="70" height="70" alt="Девушка в синем пиджаке">
+              </a>
+              <span class="user-card__likes">170</span>
+              <p class="user-card__hashtags">#образование #карьера #учеба #линкедин</p>
+              <p class="user-card__wants-subtitle user-card-subtitle">хочет посетить:</p>
+              <ul class="user-card__wants-list wants-list">
+                <li class="wants-list__item wants-list__item--united-kingdom">Великобритания</li>
+                <li class="wants-list__item wants-list__item--germany">Германия</li>
+              </ul>
+              <div class="user-card__ways ways-wrapper">
+                <p class="user-card__ways-subtitle user-card-subtitle">транспорт:</p>
+                <ul class="user-card__list ways-list">
+                  <li class="ways-list__item ways-list__item--air">
+                    <button class="ways-list__button ways-button ways-button--active" type="button">
+                      <span class="ways-button__text visually-hidden">Авиаперелёт</span>
+                    </button>
+                  </li>
+                  <li class="ways-list__item ways-list__item--vehicles">
+                    <button class="ways-list__button ways-button ways-button--active" type="button">
+                      <span class="ways-button__text visually-hidden">Автотранспорт</span>
+                    </button>
+                  </li>
+                  <li class="ways-list__item ways-list__item--bycicle">
+                    <button class="ways-list__button ways-button" type="button">
+                      <span class="ways-button__text visually-hidden">Велотранспорт</span>
+                    </button>
+                  </li>
+                  <li class="ways-list__item ways-list__item--foot">
+                    <button class="ways-list__button ways-button" type="button">
+                      <span class="ways-button__text visually-hidden">Пешком</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-card__level level-wrapper">
+                <p class="user-card__level-subtitle user-card-subtitle">левел:</p>
+                <div class="user-card__progressbar progressbar">
+                  <span class="progressbar__status-number">50</span>
+                  <span class="progressbar__status-level">level</span>
+                </div>
+              </div>
+              <button class="user-card__button button" type="button">Позвать</button>
             </article>
           </li>
         </ul>
+        <button class="profiles__button button" type="button">Показать еще</button>
+        <button class="profiles__button button button-prev" type="button">Показать предыдущую страницу</button>
+        <button class="profiles__button button button-next" type="button">Показать следующую страницу</button>
       </section>
 
     </main>
