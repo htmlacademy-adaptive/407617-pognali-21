@@ -94,23 +94,23 @@
           <p class="ways__title">Транспорт</p>
           <ul class="ways__list ways-list">
             <li class="ways-list__item ways-list__item--air">
-              <button class="ways-list__button ways-button ways-button--active">
-                <img src="http://placehold.it/21x21" width="21" height="21" alt="Авиаперелёт">
+              <button class="ways-list__button ways-button ways-button--active" type="button">
+                <span class="ways-button__text visually-hidden">Авиаперелёт</span>
               </button>
             </li>
             <li class="ways-list__item ways-list__item--vehicles">
-              <button class="ways-list__button ways-button ways-button--active">
-                <img src="http://placehold.it/17x19" width="17" height="19" alt="Автотранспорт">
+              <button class="ways-list__button ways-button ways-button--active" type="button">
+                <span class="ways-button__text visually-hidden">Автотранспорт</span>
               </button>
             </li>
             <li class="ways-list__item ways-list__item--bycicle">
-              <button class="ways-list__button ways-button">
-                <img src="http://placehold.it/24x24" width="24" height="24" alt="Велотранспорт">
+              <button class="ways-list__button ways-button" type="button">
+                <span class="ways-button__text visually-hidden">Велотранспорт</span>
               </button>
             </li>
             <li class="ways-list__item ways-list__item--foot">
-              <button class="ways-list__button ways-button ways-button--active">
-                <img src="http://placehold.it/21x23" width="21" height="23" alt="Пешком">
+              <button class="ways-list__button ways-button ways-button--active" type="button">
+                <span class="ways-button__text visually-hidden">Пешком</span>
               </button>
             </li>
           </ul>
@@ -132,7 +132,7 @@
             Таиланд, Индонезия
             <p class="plans__companions-quantity">1 попутчик</p>
             <p class="plans__period">1 июл — 15 июл</p>
-            <a class="plans__button link button" href="">Изменить</a>
+            <a class="plans__button link button" href="myplans.html">Изменить</a>
           </li>
         </ol>
       </section>
@@ -239,7 +239,7 @@
                 <td class="number-row__item number-row__item--loose">5</td>
               </tr>
             </table>
-            <a class="filter__button button link button__next-step" href="">Следующий шаг</a>
+            <a class="filter__button button link button__next-step" href="#">Следующий шаг</a>
           </fieldset>
 
 <!-- Filter country -->
@@ -290,8 +290,8 @@
                 <span class="button-add__text visually-hidden">Добавить страну</span>
               </button>
             </label> <br>
-            <a class="filter-country__button button link button__next-step" href="">Следующий шаг</a> <br>
-            <a class="filter-country__button button link button__prev-step" href="">На шаг назад</a>
+            <a class="filter-country__button button link button__next-step" href="#">Следующий шаг</a> <br>
+            <a class="filter-country__button button link button__prev-step" href="#">На шаг назад</a>
 
 <!-- Filter country popup -->
 
@@ -338,19 +338,41 @@
                   <td class="letter-row__item">Я</td>
                 </tr>
               </table>
-              <div class="alphabet-table__letter-select letter-select">
-                <ul class="letter-select__list">
-                  <li class="letter-select__item letter-select__item--australia">Австралия</li>
-                  <li class="letter-select__item letter-select__item--austria">Австрия</li>
-                  <li class="letter-select__item letter-select__item--azerbaijan">Азербайджан</li>
-                  <li class="letter-select__item letter-select__item--albania">Албания</li>
-                  <li class="letter-select__item letter-select__item--algeria">Алжир</li>
-                  <li class="letter-select__item letter-select__item--angola">Ангола</li>
-                  <li class="letter-select__item letter-select__item--andorra">Андорра</li>
-                  <li class="letter-select__item letter-select__item--antiguabarbuda">Антигуа и Барбуда</li>
-                  <li class="letter-select__item letter-select__item--argentina">Аргентина</li>
-                  <li class="letter-select__item letter-select__item--armenia">Армения</li>
-                  <li class="letter-select__item letter-select__item--afghanistan">Афганистан</li>
+              <div class="alphabet-table__country-select country-select">
+                <ul class="country-select__list">
+                  <li class="country-select__item country-select__item--australia">
+                    <a class="country-select__link" href="islands/australia.tmlh">Австралия</a>
+                  </li>
+                  <li class="country-select__item country-select__item--austria">
+                    <a class="country-select__link" href="europe/austria.html">Австрия</a>
+                  </li>
+                  <li class="country-select__item country-select__item--azerbaijan">
+                    <a class="country-select__link" href="asia/azerbaijan.html">Азербайджан</a>
+                  </li>
+                  <li class="country-select__item country-select__item--albania">
+                    <a class="country-select__link" href="europe/albania.html">Албания</a>
+                  </li>
+                  <li class="country-select__item country-select__item--algeria">
+                    <a class="country-select__link" href="algeria.html">Алжир</a>
+                  </li>
+                  <li class="country-select__item country-select__item--angola">
+                    <a class="country-select__link" href="angola.html">Ангола</a>
+                  </li>
+                  <li class="country-select__item country-select__item--andorra">
+                    <a class="country-select__link" href="europe/andorra.html">Андорра</a>
+                  </li>
+                  <li class="country-select__item country-select__item--antiguabarbuda">
+                    <a class="country-select__link" href="islands/antiguabarbuda.html">Антигуа и Барбуда</a>
+                  </li>
+                  <li class="country-select__item country-select__item--argentina">
+                    <a class="country-select__link" href="america/argentina.html">Аргентина</a>
+                  </li>
+                  <li class="country-select__item country-select__item--armenia">
+                    <a class="country-select__link" href="asia/armenia.html">Армения</a>
+                  </li>
+                  <li class="country-select__item country-select__item--afghanistan">
+                    <a class="country-select__link" href="asia/afghanistan.html">Афганистан</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -375,7 +397,7 @@
               <textarea name="filter" cols="24" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
             </label> <br>
             <a class="filter__button link button" href="">Отправить</a>
-            <a class="filter-country__button link button button__prev-step" href="">На шаг назад</a>
+            <a class="filter-country__button link button button__prev-step" href="#">На шаг назад</a>
           </fieldset>
         </form>
       </section>
