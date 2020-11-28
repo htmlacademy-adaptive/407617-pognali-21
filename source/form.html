@@ -20,7 +20,7 @@
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list list site-list">
             <li class="site-list__item">
               <a class="site-list__link link" href="">О сервисе</a>
             </li>
@@ -31,7 +31,10 @@
               <a class="site-list__link link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
+          <ul class="main-nav__list list user-list">
+            <li class="user-list__item">
+              <a class="user-list__login link button" href="">Авторизация</a>
+            </li>
             <li class="user-list__item">
               <a class="user-list__link link user-list__link--tel" href="tel:+78005558628">
                 <span class="user-list__text visually-hidden">Телефон</span>
@@ -44,12 +47,9 @@
                 mail@htmlacademy.ru
               </a>
             </li>
-            <li class="user-list__item">
-              <a class="user-list__login link button" href="">Авторизация</a>
-            </li>
           </ul>
           <div class="main-nav__social-wrapper">
-            <ul class="main-nav__social-list social-list">
+            <ul class="main-nav__social-list list social-list">
               <li class="social-list__item">
                 <a class="social-list__link social-list__link--facebook" href="">
                   <span class="social-list__text visually-hidden">Мы в Фейсбуке</span>
@@ -81,10 +81,10 @@
       <section class="user-profile">
         <h2 class="user-profile__title visually-hidden">Профайл попутчика</h2>
         <div class="travelers__progressbar progressbar">
-          <span class="progressbar__status-number">80</span>
+          <span class="progressbar__status-number">80</span> <br>
           <span class="progressbar__status-level">level</span>
         </div>
-        <img src="https://via.placeholder.com/100x100" width="100" height="100" alt="Фотография путешественника">
+        <img class="user-profile__image" src="https://via.placeholder.com/100x100" width="100" height="100" alt="Фотография путешественника">
         <a class="user-profile__button link button" href="">Сменить фото</a>
         <div class="user-profile__hashtags hashtags">
           <p class="hashtags__title">Тэги</p>
@@ -92,7 +92,7 @@
         </div>
         <div class="user-profile__ways ways">
           <p class="ways__title">Транспорт</p>
-          <ul class="ways__list ways-list">
+          <ul class="ways__list list ways-list">
             <li class="ways-list__item ways-list__item--air">
               <button class="ways-list__button ways-button ways-button--active" type="button">
                 <span class="ways-button__text visually-hidden">Авиаперелёт</span>
@@ -121,23 +121,24 @@
 
       <section class="plans">
         <h3 class="plans__title title">Мои планы:</h3>
-        <ol class="plans__list">
-          <li class="plans__item">
-            Франция, Италия
-            <p class="plans__companions-quantity">3 попутчика</p>
-            <p class="plans__period">26 мар — 29 мар</p>
-            <a class="plans__button link button" href="">Изменить</a>
+        <ul class="plans__list list">
+          <li class="plans__item plans-item">
+            <p class="plans-item__title">1. Франция, Италия</p>
+            <p class="plans-item__companions-quantity">3 попутчика</p>
+            <p class="plans-item__period">26 мар — 29 мар</p>
+            <a class="plans-item__button link button" href="">Изменить</a>
           </li>
-          <li class="plans__item">
-            Таиланд, Индонезия
-            <p class="plans__companions-quantity">1 попутчик</p>
-            <p class="plans__period">1 июл — 15 июл</p>
-            <a class="plans__button link button" href="myplans.html">Изменить</a>
+          <li class="plans__item plans-item">
+            <p class="plans-item__title">2. Таиланд, Индонезия</p>
+            <p class="plans-item__companions-quantity">1 попутчик</p>
+            <p class="plans-item__period">1 июл — 15 июл</p>
+            <a class="plans-item__button link button" href="myplans.html">Изменить</a>
           </li>
-        </ol>
+        </ul>
       </section>
 
 <!-- Plan add -->
+<!-- Step 1 -->
 
       <section class="plan-add">
         <h3 class="plan-add__title title">Добавить план:</h3>
@@ -165,84 +166,71 @@
             </label>
 
             <div class="filter-period__month month">
-              <button class="month__button-prev button-prev" type="button">
+              <button class="month__button month-button month-button__prev" type="button">
                 <span class="button-prev__text visually-hidden">Назад</span>
               </button>
               <p class="month__text">Март 2019</p>
-              <button class="month__button-next button-next" type="button">
+              <button class="month__button month-button month-button__next" type="button">
                 <span class="button-next__text visually-hidden">Вперёд</span>
               </button>
             </div>
 
-            <table class="filter-period__calendar calendar">
-              <tr class="calendar__days-row days-row">
-                <th class="days-row__item">П</th>
-                <th class="days-row__item">В</th>
-                <th class="days-row__item">С</th>
-                <th class="days-row__item">Ч</th>
-                <th class="days-row__item">П</th>
-                <th class="days-row__item">С</th>
-                <th class="days-row__item">В</th>
-              </tr>
-              <tr class="calendar__number-row number-row">
-                <td class="number-row__item">23</td>
-                <td class="number-row__item">24</td>
-                <td class="number-row__item">25</td>
-                <td class="number-row__item">26</td>
-                <td class="number-row__item">27</td>
-                <td class="number-row__item">28</td>
-                <td class="number-row__item">1</td>
-              </tr>
-              <tr class="calendar__number-row number-row">
-                <td class="number-row__item">2</td>
-                <td class="number-row__item">3</td>
-                <td class="number-row__item">4</td>
-                <td class="number-row__item">5</td>
-                <td class="number-row__item">6</td>
-                <td class="number-row__item">7</td>
-                <td class="number-row__item">8</td>
-              </tr>
-              <tr class="calendar__number-row number-row">
-                <td class="number-row__item">9</td>
-                <td class="number-row__item">10</td>
-                <td class="number-row__item">11</td>
-                <td class="number-row__item">12</td>
-                <td class="number-row__item">13</td>
-                <td class="number-row__item">14</td>
-                <td class="number-row__item">15</td>
-              </tr>
-              <tr class="calendar__number-row number-row">
-                <td class="number-row__item">16</td>
-                <td class="number-row__item">17</td>
-                <td class="number-row__item">18</td>
-                <td class="number-row__item">19</td>
-                <td class="number-row__item">20</td>
-                <td class="number-row__item">21</td>
-                <td class="number-row__item">22</td>
-              </tr>
-              <tr class="calendar__number-row number-row">
-                <td class="number-row__item">23</td>
-                <td class="number-row__item">24</td>
-                <td class="number-row__item">25</td>
-                <td class="number-row__item number-row__item--current number-row__item--active">26</td>
-                <td class="number-row__item number-row__item--current">27</td>
-                <td class="number-row__item number-row__item--current">28</td>
-                <td class="number-row__item number-row__item--loose">29</td>
-              </tr>
-              <tr class="calendar__number-row number-row">
-                <td class="number-row__item number-row__item--loose">30</td>
-                <td class="number-row__item number-row__item--loose">31</td>
-                <td class="number-row__item number-row__item--loose">1</td>
-                <td class="number-row__item number-row__item--loose">2</td>
-                <td class="number-row__item number-row__item--loose">3</td>
-                <td class="number-row__item number-row__item--loose">4</td>
-                <td class="number-row__item number-row__item--loose">5</td>
-              </tr>
-            </table>
+            <div class="filter-period__grid-calendar grid-calendar">
+              <div class="days-cell">П</div>
+              <div class="days-cell">В</div>
+              <div class="days-cell">С</div>
+              <div class="days-cell">Ч</div>
+              <div class="days-cell">П</div>
+              <div class="days-cell days-cell__weekend">С</div>
+              <div class="days-cell days-cell__weekend">В</div>
+              <div class="number-cell">23</div>
+              <div class="number-cell">24</div>
+              <div class="number-cell">25</div>
+              <div class="number-cell">26</div>
+              <div class="number-cell">27</div>
+              <div class="number-cell">28</div>
+              <div class="number-cell">1</div>
+              <div class="number-cell">2</div>
+              <div class="number-cell">3</div>
+              <div class="number-cell">4</div>
+              <div class="number-cell">5</div>
+              <div class="number-cell">6</div>
+              <div class="number-cell">7</div>
+              <div class="number-cell">8</div>
+              <div class="number-cell">9</div>
+              <div class="number-cell">10</div>
+              <div class="number-cell">11</div>
+              <div class="number-cell">12</div>
+              <div class="number-cell">13</div>
+              <div class="number-cell">14</div>
+              <div class="number-cell">15</div>
+              <div class="number-cell">16</div>
+              <div class="number-cell">17</div>
+              <div class="number-cell">18</div>
+              <div class="number-cell">19</div>
+              <div class="number-cell">20</div>
+              <div class="number-cell">21</div>
+              <div class="number-cell">22</div>
+              <div class="number-cell">23</div>
+              <div class="number-cell">24</div>
+              <div class="number-cell">25</div>
+              <div class="number-cell number-cell__current number-cell__current--active">26</div>
+              <div class="number-cell number-cell__current">27</div>
+              <div class="number-cell number-cell__current">28</div>
+              <div class="number-cell number-cell__loose">29</div>
+              <div class="number-cell number-cell__loose">30</div>
+              <div class="number-cell number-cell__loose">31</div>
+              <div class="number-cell number-cell__loose">1</div>
+              <div class="number-cell number-cell__loose">2</div>
+              <div class="number-cell number-cell__loose">3</div>
+              <div class="number-cell number-cell__loose">4</div>
+              <div class="number-cell number-cell__loose">5</div>
+            </div>
             <a class="filter__button button link button__next-step" href="#">Следующий шаг</a>
           </fieldset>
 
 <!-- Filter country -->
+<!-- Step 2 -->
 
           <fieldset class="filter__country filter-country">
             <legend class="filter-country__title">Шаг 2. Маршрут</legend>
@@ -290,8 +278,8 @@
                 <span class="button-add__text visually-hidden">Добавить страну</span>
               </button>
             </label> <br>
-            <a class="filter-country__button button link button__next-step" href="#">Следующий шаг</a> <br>
-            <a class="filter-country__button button link button__prev-step" href="#">На шаг назад</a>
+            <a class="filter__button button link button__next-step" href="#">Следующий шаг</a> <br>
+            <a class="filter__button button link button__prev-step" href="#">На шаг назад</a>
 
 <!-- Filter country popup -->
 
@@ -301,82 +289,76 @@
                 <span class="button-close__text visually-hidden">Закрыть</span>
               </button>
 
-              <table class="popup__alphabet-table alphabet-table">
-                <tr class="alphabet-table__letter-row letter-row">
-                  <td class="letter-row__item letter-row__item--current">А</td>
-                  <td class="letter-row__item">Б</td>
-                  <td class="letter-row__item">В</td>
-                  <td class="letter-row__item">Г</td>
-                  <td class="letter-row__item">Д</td>
-                </tr>
-                <tr class="alphabet-table__letter-row letter-row">
-                  <td class="letter-row__item">Е</td>
-                  <td class="letter-row__item">З</td>
-                  <td class="letter-row__item">И</td>
-                  <td class="letter-row__item">К</td>
-                  <td class="letter-row__item">Л</td>
-                </tr>
-                <tr class="alphabet-table__letter-row letter-row">
-                  <td class="letter-row__item">М</td>
-                  <td class="letter-row__item">Н</td>
-                  <td class="letter-row__item">О</td>
-                  <td class="letter-row__item">П</td>
-                  <td class="letter-row__item">Р</td>
-                </tr>
-                <tr class="alphabet-table__letter-row letter-row">
-                  <td class="letter-row__item">С</td>
-                  <td class="letter-row__item">Т</td>
-                  <td class="letter-row__item">У</td>
-                  <td class="letter-row__item">Ф</td>
-                  <td class="letter-row__item">Х</td>
-                </tr>
-                <tr class="alphabet-table__letter-row letter-row">
-                  <td class="letter-row__item">Ч</td>
-                  <td class="letter-row__item">Ш</td>
-                  <td class="letter-row__item">Э</td>
-                  <td class="letter-row__item">Ю</td>
-                  <td class="letter-row__item">Я</td>
-                </tr>
-              </table>
-              <div class="alphabet-table__country-select country-select">
-                <ul class="country-select__list">
+              <div class="popup__alphabet alphabet">
+                <div class="alphabet__letter-cell alphabet__letter-cell--current">А</div>
+                <div class="alphabet__letter-cell">Б</div>
+                <div class="alphabet__letter-cell">В</div>
+                <div class="alphabet__letter-cell">Г</div>
+                <div class="alphabet__letter-cell">Д</div>
+                <div class="alphabet__letter-cell">Е</div>
+                <div class="alphabet__letter-cell">З</div>
+                <div class="alphabet__letter-cell">И</div>
+                <div class="alphabet__letter-cell">К</div>
+                <div class="alphabet__letter-cell">Л</div>
+                <div class="alphabet__letter-cell">М</div>
+                <div class="alphabet__letter-cell">Н</div>
+                <div class="alphabet__letter-cell">О</div>
+                <div class="alphabet__letter-cell">П</div>
+                <div class="alphabet__letter-cell">Р</div>
+                <div class="alphabet__letter-cell">С</div>
+                <div class="alphabet__letter-cell">Т</div>
+                <div class="alphabet__letter-cell">У</div>
+                <div class="alphabet__letter-cell">Ф</div>
+                <div class="alphabet__letter-cell">Х</div>
+                <div class="alphabet__letter-cell">Ч</div>
+                <div class="alphabet__letter-cell">Ш</div>
+                <div class="alphabet__letter-cell">Э</div>
+                <div class="alphabet__letter-cell">Ю</div>
+                <div class="alphabet__letter-cell">Я</div>
+              </div>
+
+              <div class="alphabet__country-select country-select">
+                <ul class="country-select__list list">
                   <li class="country-select__item country-select__item--australia">
-                    <a class="country-select__link" href="islands/australia.tmlh">Австралия</a>
+                    <a class="country-select__link link" href="/islands/australia.tmlh">Австралия</a>
                   </li>
                   <li class="country-select__item country-select__item--austria">
-                    <a class="country-select__link" href="europe/austria.html">Австрия</a>
+                    <a class="country-select__link link" href="/europe/austria.html">Австрия</a>
                   </li>
                   <li class="country-select__item country-select__item--azerbaijan">
-                    <a class="country-select__link" href="asia/azerbaijan.html">Азербайджан</a>
+                    <a class="country-select__link link" href="/asia/azerbaijan.html">Азербайджан</a>
                   </li>
                   <li class="country-select__item country-select__item--albania">
-                    <a class="country-select__link" href="europe/albania.html">Албания</a>
+                    <a class="country-select__link link" href="/europe/albania.html">Албания</a>
                   </li>
                   <li class="country-select__item country-select__item--algeria">
-                    <a class="country-select__link" href="algeria.html">Алжир</a>
+                    <a class="country-select__link link" href="/algeria.html">Алжир</a>
                   </li>
                   <li class="country-select__item country-select__item--angola">
-                    <a class="country-select__link" href="angola.html">Ангола</a>
+                    <a class="country-select__link link" href="/angola.html">Ангола</a>
                   </li>
                   <li class="country-select__item country-select__item--andorra">
-                    <a class="country-select__link" href="europe/andorra.html">Андорра</a>
+                    <a class="country-select__link link" href="/europe/andorra.html">Андорра</a>
                   </li>
                   <li class="country-select__item country-select__item--antiguabarbuda">
-                    <a class="country-select__link" href="islands/antiguabarbuda.html">Антигуа и Барбуда</a>
+                    <a class="country-select__link link" href="/islands/antiguabarbuda.html">Антигуа и Барбуда</a>
                   </li>
                   <li class="country-select__item country-select__item--argentina">
-                    <a class="country-select__link" href="america/argentina.html">Аргентина</a>
+                    <a class="country-select__link link" href="/america/argentina.html">Аргентина</a>
                   </li>
                   <li class="country-select__item country-select__item--armenia">
-                    <a class="country-select__link" href="asia/armenia.html">Армения</a>
+                    <a class="country-select__link link" href="/asia/armenia.html">Армения</a>
                   </li>
                   <li class="country-select__item country-select__item--afghanistan">
-                    <a class="country-select__link" href="asia/afghanistan.html">Афганистан</a>
+                    <a class="country-select__link link" href="/asia/afghanistan.html">Афганистан</a>
                   </li>
                 </ul>
               </div>
             </div>
           </fieldset>
+
+<!-- Entertainment -->
+<!-- Step 3 -->
 
           <fieldset class="filter__entertainment filter-entertainment">
             <legend class="filter-entertainment__title">Шаг 3. Развлечения</legend>
@@ -386,7 +368,7 @@
               <span class="filter-country__flag">
                 <img src="http://placehold.it/35x24" width="35" height="24" alt="Флаг">
               </span> <br>
-              <textarea name="filter" cols="24" rows="10" placeholder="План действий"></textarea>
+              <textarea class="filter-entertainment__textarea" name="filter" cols="24" rows="10" placeholder="План действий"></textarea>
             </label> <br>
 
             <label>
@@ -394,10 +376,10 @@
               <span class="filter-country__flag">
                 <img src="http://placehold.it/35x24" width="35" height="24" alt="Флаг">
               </span> <br>
-              <textarea name="filter" cols="24" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              <textarea class="filter-entertainment__textarea name="filter" cols="24" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
             </label> <br>
             <a class="filter__button link button" href="">Отправить</a>
-            <a class="filter-country__button link button button__prev-step" href="#">На шаг назад</a>
+            <a class="filter__button link button button__prev-step" href="#">На шаг назад</a>
           </fieldset>
         </form>
       </section>
@@ -410,7 +392,7 @@
         <a class="page-footer__logo">
           <img src="http://placehold.it/96x15" width="96" height="15" alt="Сервис «Погнали»">
         </a>
-        <ul class="page-footer__social-list social-list">
+        <ul class="page-footer__social-list list social-list">
           <li class="social-list__item social-list__item--facebook">
             <a class="social-list__link" href="">
               <span class="page-footer__text visually-hidden">Мы в Фейсбуке</span>
