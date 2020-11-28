@@ -1,0 +1,46 @@
+.alphabet {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  text-align: center;
+}
+
+.alphabet__letter-cell--current {
+  color: @basic_white;
+  background-color: @basic_blue;
+}
+
+.alphabet__letter-cell {
+  padding: 4em;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: @basic_blue;
+  background-color: @basic_white;
+  border: 1px solid fade(@special_grey, 30%);
+}
+
+.alphabet-form__letter-cell--current {
+  background-color: @basic_blue_light;
+}
+
+.country-select {
+  padding: 14px 0;
+}
+
+.country-select__form {
+  padding: 20px;
+  background-color: @basic_white;
+  border: 1px solid fade(@special_grey, 30%);
+}
+
+.alphabet-catalog__letter-cell--current {
+  background-color: @basic_blue_dark;
+  color: @basic_white;
+}
+
+.country-select__catalog {
+  background-color: @special_grey_light;
+  border: none;
+}

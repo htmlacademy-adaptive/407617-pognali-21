@@ -137,29 +137,13 @@
   background-color: @basic_white;
 }
 
-.alphabet {
-  padding: 25px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  justify-content: center;
+.popup__title {
+  display: block;
   text-align: center;
-}
-
-.alphabet__letter-cell {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 500;
-  padding: 4em;
-  border: 1px solid fade(@special_grey, 30%);
-}
-
-.alphabet__letter-cell--current {
-  background-color: @basic_blue_light;
-}
-
-.alphabet__country-select {
-  padding: 25px;
+  text-transform: uppercase;
+  color: @basic_white;
+  background-color: @basic_blue_dark;
+  border-radius: 4px 4px 0 0;
 }
 
 .filter-country__input {
