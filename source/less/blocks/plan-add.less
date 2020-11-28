@@ -1,0 +1,175 @@
+.plan-add {
+  padding: 28px 0;
+  border-radius: 20px;
+  background-color: @special_grey_dark;
+}
+
+.plan-add__title {
+  margin: 29px 0;
+  padding: 0 25px 29px;
+  color: @basic_blue;
+}
+
+.filter-period,
+.filter-country,
+.filter-entertainment {
+  margin: 0 25px;
+  padding: 0 25px;
+  background-color: @basic_white;
+  border: none;
+  border-radius: 10px;
+}
+
+.filter-period__title,
+.filter-country__title,
+.filter-entertainment__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: @basic_blue;
+}
+
+.filter-period__name-input {
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @basic_blue;
+}
+
+.filter-period__interpretation-input {
+  text-transform: uppercase;
+  color: fade(@basic_blue, 30%);
+}
+
+.month {
+  border-top: 1px solid @special_grey_dark;
+  border-bottom: 1px solid @special_grey_dark;
+}
+
+.month__text {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: @basic_blue;
+}
+
+.month-button {
+  width: 14px;
+  height: 14px;
+  border: none;
+}
+
+.month-button__prev {
+  background-color: @basic_white;
+  border-left: 2px solid fade(@basic_black, 30%);
+  border-bottom: 2px solid fade(@basic_black, 30%);
+  transform: rotate(45deg);
+  // box-shadow: 0 0 10px @basic_black;
+}
+
+.month-button__next {
+  background-color: @basic_white;
+  border-left: 2px solid fade(@basic_black, 30%);
+  border-bottom: 2px solid fade(@basic_black, 30%);
+  transform: rotate(225deg);
+  // box-shadow: 0 0 10px @basic_black;
+}
+
+.grid-calendar {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.days-cell {
+  color: @special_grey;
+}
+
+.days-cell__weekend {
+  color: @basic_red;
+}
+
+.number-cell {
+  padding: 2em;
+  border: 1px solid fade(@special_grey, 30%);
+}
+
+.number-cell__current {
+  font-weight: 500;
+  color: @basic_white;
+  background-color: @basic_blue;
+}
+
+.number-cell__current--active {
+  border: 5px solid @basic_red;
+}
+
+.number-cell__loose {
+  font-weight: 500;
+  color: @basic_blue;
+  background-color: @special_grey_dark;
+}
+
+.filter__button {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+
+.button__prev-step {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @basic_white;
+}
+
+.alphabet {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  text-align: center;
+}
+
+.alphabet__letter-cell {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 4em;
+  border: 1px solid fade(@special_grey, 30%);
+}
+
+.alphabet__letter-cell--current {
+  background-color: @basic_blue_light;
+}
+
+.alphabet__country-select {
+  padding: 25px;
+}
+
+.country-select__link {
+  font-weight: 400;
+  color: @special_grey;
+}
+
+.filter-entertainment__country-selected {
+  font-size: 18px;
+  font-weight: 500;
+  color: @basic_blue;
+}
+
+.filter-entertainment__textarea {
+  padding: 10px 14px;
+  color: @special_grey;
+  border: 1px solid fade(@special_grey, 30%);
+  border-radius: 4px;
+  resize: none;
+}
