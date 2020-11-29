@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,16 +11,16 @@
 <!-- Header -->
 
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img src="http://placehold.it/96x15" width="96" height="15" alt="Сервис «Погнали»">
-        </a>
+      <nav class="page-header__main-nav main-nav">
+        <div class="main-nav__wrapper">
+          <a class="page-header__logo link" href="index.html">
+            <img class="page-header__image image" src="http://placehold.it/96x15" width="96" height="15" alt="Сервис «Погнали»">
+          </a>
           <button class="page-header__nav-toggle nav-toggle" type="button">
             <span class="nav-toggle__text visually-hidden">Открыть меню</span>
           </button>
-      </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        </div>
+        <div class="main-nav__popup">
           <ul class="main-nav__list list site-list">
             <li class="site-list__item">
               <a class="site-list__link link" href="">О сервисе</a>
@@ -28,12 +29,12 @@
               <a class="site-list__link link" href="form.html">Напраления</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link link site-list__link--current"" href="">Попутчики</a>
+              <a class="site-list__link link">Попутчики</a>
             </li>
           </ul>
           <ul class="main-nav__list list user-list">
             <li class="user-list__item">
-              <a class="user-list__login link button" href="">Авторизация</a>
+              <a class="user-list__login button link" href="">Авторизация</a>
             </li>
             <li class="user-list__item">
               <a class="user-list__link link user-list__link--tel" href="tel:+78005558628">
@@ -51,17 +52,17 @@
           <div class="main-nav__social-wrapper">
             <ul class="main-nav__social-list list social-list">
               <li class="social-list__item">
-                <a class="social-list__link social-list__link--facebook" href="">
+                <a class="social-list__link link social-list__link--facebook" href="">
                   <span class="social-list__text visually-hidden">Мы в Фейсбуке</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--vk" href="">
+                <a class="social__link link social__link--vk" href="">
                   <span class="social-list__text visually-hidden">Мы в ВКонтакте</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="">
+                <a class="social__link link social__link--instagram" href="">
                   <span class="social-list__text visually-hidden">Мы в Инстаграм</span>
                 </a>
               </li>
