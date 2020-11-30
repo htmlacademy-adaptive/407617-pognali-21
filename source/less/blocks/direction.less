@@ -1,6 +1,7 @@
 .direction {
-  padding: 0 25px;
+  padding: 71px 25px 34px;
   background-color: @basic_blue_light;
+  border-radius: 0 0 20px 20px;
 }
 
 .direction__title {
@@ -8,20 +9,36 @@
 }
 
 .direction__text {
-  padding: 0 25px;
+  padding: 0 25px 60px;
+  width: 200px;
 }
 
 .direction__list {
+  position: relative;
   margin: 0;
   padding: 0;
+  padding-bottom: 27px;
   list-style: none;
 }
 
+.direction__image {
+  border-radius: 10px 10px 0 0;
+}
+
 .item-box {
-  padding: 0 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // grid-template-rows: 1fr 1fr;
+  position: relative;
+  top: -10px;
+  padding: 25px 25px;
+  background-color: @basic_white;
+  border-radius: 10px 10px;
 }
 
 .item-box__name {
+  padding: 0;
+  margin: 0;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
@@ -29,14 +46,22 @@
 }
 
 .item-box__travelers {
+  text-align: end;
   line-height: 20px;
   color: @basic_blue;
   opacity: 0.3;
 }
 
 .item-box__tagline {
+  margin: 0;
   font-weight: 500;
   line-height: 18px;
   color: @special_grey;
   opacity: 0.3;
+}
+
+.direction__to-all {
+  padding: 1.15em;
+  border-radius: 10px;
+  text-transform: none;
 }

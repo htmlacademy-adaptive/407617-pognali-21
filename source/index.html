@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,16 +11,16 @@
 <!-- Header -->
 
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo link">
-          <img class="page-header__image image" src="http://placehold.it/96x15" width="96" height="15" alt="Сервис «Погнали»">
-        </a>
-        <button class="page-header__nav-toggle nav-toggle" type="button">
-          <span class="nav-toggle__text visually-hidden">Открыть меню</span>
-        </button>
-      </div>
-      <nav class="main-nav">
+      <nav class="page-header__main-nav main-nav">
         <div class="main-nav__wrapper">
+          <a class="page-header__logo link">
+            <img class="page-header__image image" src="http://placehold.it/96x15" width="96" height="15" alt="Сервис «Погнали»">
+          </a>
+          <button class="page-header__nav-toggle nav-toggle" type="button">
+            <span class="nav-toggle__text visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <div class="main-nav__popup">
           <ul class="main-nav__list list site-list">
             <li class="site-list__item">
               <a class="site-list__link link" href="">О сервисе</a>
@@ -101,19 +102,19 @@
           </blockquote>
           <ul class="intro__instruction-list list instruction-list">
             <li class="instruction-list__item">
-              Выберите направление
+              <span class="instruction-list__text">Выберите направление</span>
               <span class="instruction-list__number">1</span>
             </li>
             <li class="instruction-list__item">
-              Изучите идеи путешественников
+              <span class="instruction-list__text">Изучите идеи путешественников</span>
               <span class="instruction-list__number">2</span>
             </li>
             <li class="instruction-list__item">
-              Находите тех, кто похож на вас
+              <span class="instruction-list__text">Находите тех, кто похож на вас</span>
               <span class="instruction-list__number">3</span>
             </li>
             <li class="instruction-list__item">
-              Путешествуйте вместе!
+              <span class="instruction-list__text">Путешествуйте вместе!</span>
               <span class="instruction-list__number">4</span>
             </li>
           </ul>
@@ -123,7 +124,7 @@
 
         <section class="about">
           <h3 class="about__title title">О сервисе</h3>
-          <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p class="about__text">Любое путешествие веселее <br> с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
           <p class="about__appeal">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         </section>
 
@@ -131,7 +132,7 @@
 
         <section class="direction">
           <h3 class="direction__title title">Направления</h3>
-          <p class="direction__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          <p class="direction__text">Мы не продаем туры <br> и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           <ul class="direction__list list">
             <li class="direction__item direction__item--thailand">
               <img class="direction__image image" src="http://placehold.it/270x110"" width="270" height="110" alt="Небольшой каменный выступ, торчащий из воды">
@@ -172,7 +173,7 @@
           <ul class="travelers__list list">
             <li class="travelers__item">
               <div class="travelers__progressbar progressbar">
-                <span class="progressbar__status-number">99</span> <br>
+                <span class="progressbar__status-number">99</span>
                 <span class="progressbar__status-level">level</span>
               </div>
               <img class="travelers__image image" src="http://placehold.it/270x270" width="270" height="270" alt="Девушка в купальнике лежит на воде">
